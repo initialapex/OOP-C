@@ -1,0 +1,122 @@
+/* tasks.json */
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_encapulation",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "encap",
+                "Encapsulation/Main.c",
+                "Encapsulation/Rectangle.c",
+                "-g",
+                "-v",
+                "-fms-extensions"
+            ],
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build_inheritance",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "inherit",
+                "Inheritance/Main.c",
+                "Inheritance/Rectangle.c",
+                "Inheritance/Square.c",
+                "-g",
+                "-v",
+                "-fms-extensions"
+            ],
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build_polymorphism",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "poly",
+                "Polymorphism/Main.c",
+                "Polymorphism/Rectangle.c",
+                "Polymorphism/Circle.c",
+                "-g",
+                "-v",
+                "-fms-extensions"
+            ],
+            "type": "shell",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
